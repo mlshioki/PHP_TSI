@@ -2,5 +2,5 @@
 session_start();
 
 if (!isset($_SESSION['login'])) {
-	header('Location: /PHP_TSI/sessao/');
+	header('Location: /PHP_TSI/login_db/');
 } 
