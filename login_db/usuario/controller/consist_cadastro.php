@@ -18,7 +18,7 @@ if(strlen($nome) < 2){
 //Verifica se o e-mail é válido
 if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 	$erros[] = 'E-mail inválido';
-} elseif(ja_existe_email($email)){
+} elseif(ja_existe_email($email) && !isset($_POST['gravar'])){
 	$erros[] = 'E-mail já cadastrado';
 }
 

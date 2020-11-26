@@ -16,7 +16,7 @@
             </tr>   
             <?php
                 if(count($tabela) >  0){
-                    foreach($tabela ad $id => $registro){
+                    foreach($tabela as $id => $registro){
                         echo "<tr>
                                 <td>$id</td>
                                 <td>{$registro['nome']}</td>
